@@ -23,7 +23,7 @@ public class Spawner : MonoBehaviour
 
         if (_passedTime >= _spawnTime)
         {
-            _points[NextPoint].CreateNPC();
+            _points[NextPoint].CreateEnemy();
             _passedTime = 0;
         }
     }

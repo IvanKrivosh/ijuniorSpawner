@@ -226,6 +226,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5425195666147580937, guid: 1ac3a217cab5fb943acddf17c49390a9, type: 3}
     - target: {fileID: 5901985410286344235, guid: d42601c7d05142b47a73f5d8d9de6695, type: 3}
+      propertyPath: _enemy
+      value: 
+      objectReference: {fileID: 5425195666147580937, guid: 679d79f1ec02490419858e512cf66633, type: 3}
+    - target: {fileID: 5901985410286344235, guid: d42601c7d05142b47a73f5d8d9de6695, type: 3}
       propertyPath: _target
       value: 
       objectReference: {fileID: 881377519}
@@ -452,6 +456,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5901985410286344235, guid: d42601c7d05142b47a73f5d8d9de6695, type: 3}
+      propertyPath: _enemy
+      value: 
+      objectReference: {fileID: 5425195666147580937, guid: 1ac3a217cab5fb943acddf17c49390a9, type: 3}
+    - target: {fileID: 5901985410286344235, guid: d42601c7d05142b47a73f5d8d9de6695, type: 3}
       propertyPath: _target
       value: 
       objectReference: {fileID: 93816100}
@@ -655,6 +663,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5901985410286344235, guid: d42601c7d05142b47a73f5d8d9de6695, type: 3}
       propertyPath: _npc
+      value: 
+      objectReference: {fileID: 5425195666147580937, guid: e52f0f927f9d304418655e0dd6a8230b, type: 3}
+    - target: {fileID: 5901985410286344235, guid: d42601c7d05142b47a73f5d8d9de6695, type: 3}
+      propertyPath: _enemy
       value: 
       objectReference: {fileID: 5425195666147580937, guid: e52f0f927f9d304418655e0dd6a8230b, type: 3}
     - target: {fileID: 5901985410286344235, guid: d42601c7d05142b47a73f5d8d9de6695, type: 3}

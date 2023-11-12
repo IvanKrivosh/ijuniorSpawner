@@ -2,24 +2,17 @@ using UnityEngine;
 
 public class SpawnPoint : MonoBehaviour
 {
-    [SerializeField] NonPlayerCharacter _npc;
-    [SerializeField] NPCTarget _target;
+    [SerializeField] Enemy _enemy;
+    [SerializeField] Ñvilian _target;
 
-    private Transform _transform;
-
-    public void CreateNPC()
+    public void CreateEnemy()
     {
-        NonPlayerCharacter npc = Instantiate(_npc, _transform);
-        npc.Init(_target);
+        Enemy enemy = Instantiate(_enemy, transform);
+        enemy.Init(_target);
     }
 
     private void Update ()
     {
-        Debug.DrawRay(_transform.position, _transform.up * 10);
-    }
-
-    private void Awake()
-    {
-        _transform = GetComponent<Transform>();
+        Debug.DrawRay(transform.position, transform.up * 10);
     }
 }

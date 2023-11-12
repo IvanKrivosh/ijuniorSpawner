@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Ñvilian : NonPlayerCharacter
+public class MoverByPoints : Mover
 {   
     [SerializeField] Path _path;        
     
@@ -11,6 +11,6 @@ public class Ñvilian : NonPlayerCharacter
         if (_currentPoint == null || transform.position == _currentPoint.position)
             _currentPoint = _path.GetNextPoint();
 
-        transform.position = Vector3.MoveTowards(transform.position, _currentPoint.position, _speed * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, _currentPoint.position, Speed * Time.deltaTime);
     }   
 }

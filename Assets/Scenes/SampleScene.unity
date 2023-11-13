@@ -210,6 +210,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpawnPoint_2
       objectReference: {fileID: 0}
+    - target: {fileID: 1320369090879701081, guid: d42601c7d05142b47a73f5d8d9de6695, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5901985410286344235, guid: d42601c7d05142b47a73f5d8d9de6695, type: 3}
       propertyPath: _npc
       value: 
@@ -637,6 +641,10 @@ PrefabInstance:
     - target: {fileID: 1320369090879701081, guid: d42601c7d05142b47a73f5d8d9de6695, type: 3}
       propertyPath: m_Name
       value: SpawnPoint_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1320369090879701081, guid: d42601c7d05142b47a73f5d8d9de6695, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5901985410286344235, guid: d42601c7d05142b47a73f5d8d9de6695, type: 3}
       propertyPath: _npc

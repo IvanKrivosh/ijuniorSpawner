@@ -3,12 +3,7 @@ using UnityEngine;
 
 public class MoverToTarget: Mover
 {    
-    private Transform _target;
-
-    public void Init(Transform target)
-    {
-        _target = target;        
-    }
+    private Transform _target;   
 
     private void Update()
     {        
@@ -20,5 +15,10 @@ public class MoverToTarget: Mover
     {
         if (collision.TryGetComponent(out Transform target) && target == _target)        
             Destroy(gameObject);        
-    }    
+    }
+
+    public void Init(Transform target)
+    {
+        _target = target;
+    }
 }

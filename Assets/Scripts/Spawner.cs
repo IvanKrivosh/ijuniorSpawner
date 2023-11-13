@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -6,9 +7,9 @@ public class Spawner : MonoBehaviour
 {
     [SerializeField] float _spawnTime = 0.5f;
 
-    private List<SpawnPoint> _points;
-    private float _passedTime;
+    private List<SpawnPoint> _points;    
     private System.Random _random = new System.Random();
+    private IEnumerator _spawnCoroutine;
 
     private int NextPoint => _random.Next(0, _points.Count);
 
@@ -17,14 +18,23 @@ public class Spawner : MonoBehaviour
         _points = GetComponentsInChildren<SpawnPoint>().ToList();
     }
 
-    private void Update()
+    private void OnEnable()
     {
-        _passedTime += Time.deltaTime;
+        _spawnCoroutine = SpawnEnemy();
+        StartCoroutine(_spawnCoroutine);
+    }
 
-        if (_passedTime >= _spawnTime)
+    private void OnDisable()
+    {
+        StopCoroutine(_spawnCoroutine);
+    }
+
+    private IEnumerator SpawnEnemy() 
+    {        
+        while (enabled)
         {
             _points[NextPoint].CreateEnemy();
-            _passedTime = 0;
-        }
+            yield return new WaitForSeconds(_spawnTime);
+        }        
     }
 }
